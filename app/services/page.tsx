@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { ClipboardCheck, ShieldCheck, Sparkles } from "lucide-react";
 import { CTA } from "@/components/CTA";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ServiceCard } from "@/components/ServiceCard";
@@ -32,24 +33,48 @@ export default function ServicesPage() {
           ))}
         </div>
       </RevealSection>
-      <RevealSection>
-        <div className="container grid two-col">
-          <div>
-            <span className="eyebrow">Our approach</span>
-            <h2>Clear treatments, careful inspections and better long-term results.</h2>
-            <p>
-              We identify pest pressure, nesting sites and entry points before
-              applying treatment. That means your service is not just about what
-              is visible today, but about reducing the conditions pests rely on.
-            </p>
-          </div>
-          <div className="grid three-col">
-            {["Clear communication", "Safety-first treatments", "Guaranteed care"].map((item) => (
-              <div className="card feature-panel" key={item}>
-                <h3>{item}</h3>
-                <p>Reliable pest control guidance from booking through follow-up.</p>
+      <RevealSection className="approach-band">
+        <div className="container">
+          <div className="approach-grid">
+            <div className="approach-copy">
+              <span className="eyebrow">Our approach</span>
+              <h2>Simple steps. Cleaner results. Better long-term protection.</h2>
+              <p>
+                We inspect the source, choose the right treatment and explain what
+                to do next so your pest control visit feels clear and well managed.
+              </p>
+              <div className="approach-note">
+                <strong>Every visit includes</strong>
+                <span>inspection, targeted treatment, practical prevention advice</span>
               </div>
-            ))}
+            </div>
+            <div className="approach-cards">
+              {[
+                {
+                  icon: ClipboardCheck,
+                  title: "Clear communication",
+                  text: "Straight answers, useful next steps and a service plan that makes sense."
+                },
+                {
+                  icon: ShieldCheck,
+                  title: "Safety-first treatments",
+                  text: "Targeted products and careful application for homes, pets and surfaces."
+                },
+                {
+                  icon: Sparkles,
+                  title: "Guaranteed care",
+                  text: "A tidy, professional finish with follow-up advice that helps pests stay away."
+                }
+              ].map((item) => (
+                <article className="card approach-card" key={item.title}>
+                  <span className="icon-pill">
+                    <item.icon size={18} />
+                  </span>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </RevealSection>
