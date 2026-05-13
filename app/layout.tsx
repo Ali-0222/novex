@@ -22,6 +22,10 @@ export const metadata: Metadata = {
     siteName: "Novex Pest Control",
     locale: "en_AU",
     type: "website"
+  },
+  icons: {
+    icon: "/icon.svg",
+    apple: "/apple-icon.svg"
   }
 };
 
