@@ -1,0 +1,31 @@
+{
+  "name": "novex-pest-control",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NEXT_TEST_WASM_DIR=./node_modules/@next/swc-wasm-nodejs next dev --webpack",
+    "build": "cross-env NEXT_TEST_WASM_DIR=./node_modules/@next/swc-wasm-nodejs next build --webpack",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "next": "16.2.6",
+    "nodemailer": "^6.9.16",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.6",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.15.0",
+    "eslint-config-next": "16.2.6",
+    "typescript": "^5.6.3"
+  },
+  "optionalDependencies": {
+    "@next/swc-wasm-nodejs": "^16.2.6"
+  }
+}
