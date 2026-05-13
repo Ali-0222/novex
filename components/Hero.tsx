@@ -47,6 +47,7 @@ export function Hero() {
             fill
             priority
             sizes="(max-width: 920px) 100vw, 48vw"
+            quality={82}
             style={{ objectFit: "cover" }}
           />
         </div>

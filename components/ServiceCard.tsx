@@ -27,6 +27,7 @@ export function ServiceCard({ title, slug, summary, image }: ServiceCardProps) {
           alt={`${title} service by Novex Pest Control`}
           fill
           sizes="(max-width: 920px) 100vw, 33vw"
+          quality={70}
           style={{ objectFit: "cover" }}
         />
       </div>

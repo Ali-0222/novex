@@ -23,6 +23,7 @@ export default function Home() {
               alt="Clean family home protected with pest control"
               fill
               sizes="(max-width: 920px) 100vw, 48vw"
+              quality={72}
               style={{ objectFit: "cover" }}
             />
           </div>

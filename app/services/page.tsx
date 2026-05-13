@@ -107,6 +107,7 @@ export default function ServicesPage() {
               alt="Pest control technician preparing professional treatment equipment"
               fill
               sizes="(max-width: 920px) 100vw, 48vw"
+              quality={72}
               style={{ objectFit: "cover" }}
             />
           </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import type { PropsWithChildren } from "react";
+import type { CSSProperties, PropsWithChildren } from "react";
 import { useEffect, useRef, useState } from "react";
 
 type RevealSectionProps = PropsWithChildren<{
@@ -33,6 +33,7 @@ export function RevealSection({ className = "", children }: RevealSectionProps) 
     <section
       ref={ref}
       className={`section reveal ${visible ? "is-visible" : ""} ${className}`.trim()}
+      style={{ contentVisibility: "auto", containIntrinsicSize: "1px 900px" } as CSSProperties}
     >
       {children}
     </section>

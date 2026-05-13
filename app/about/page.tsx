@@ -33,6 +33,7 @@ export default function AboutPage() {
               alt="Novex Pest Control team planning a customer service visit"
               fill
               sizes="(max-width: 920px) 100vw, 48vw"
+              quality={72}
               style={{ objectFit: "cover" }}
             />
           </div>

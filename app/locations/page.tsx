@@ -60,7 +60,7 @@ export default function LocationsPage() {
               ["Available Near You", "/images/locations.jpg"]
             ].map(([title, image]) => (
               <div className="image-card" key={title}>
-                <Image src={image} alt={`${title} pest control service`} fill sizes="(max-width: 920px) 100vw, 33vw" style={{ objectFit: "cover" }} />
+                <Image src={image} alt={`${title} pest control service`} fill sizes="(max-width: 920px) 100vw, 33vw" quality={70} style={{ objectFit: "cover" }} />
                 <h3>{title}</h3>
               </div>
             ))}
