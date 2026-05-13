@@ -29,7 +29,7 @@ export default function AboutPage() {
         <div className="container grid two-col">
           <div style={{ position: "relative", minHeight: 420, borderRadius: 8, overflow: "hidden" }}>
             <Image
-              src="/images/about-team.svg"
+              src="/images/about.jpg"
               alt="Novex Pest Control team planning a customer service visit"
               fill
               sizes="(max-width: 920px) 100vw, 48vw"

@@ -19,7 +19,7 @@ export default function Home() {
         <div className="container grid two-col">
           <div style={{ position: "relative", minHeight: 420, borderRadius: 8, overflow: "hidden" }}>
             <Image
-              src="/images/home-safe.svg"
+              src="/images/home.jpg"
               alt="Clean family home protected with pest control"
               fill
               sizes="(max-width: 920px) 100vw, 48vw"

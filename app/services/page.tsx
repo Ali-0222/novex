@@ -78,7 +78,7 @@ export default function ServicesPage() {
           </div>
           <div style={{ position: "relative", minHeight: 330, borderRadius: 8, overflow: "hidden" }}>
             <Image
-              src="/images/service-detail.svg"
+              src="/images/service.jpg"
               alt="Pest control technician preparing professional treatment equipment"
               fill
               sizes="(max-width: 920px) 100vw, 48vw"
