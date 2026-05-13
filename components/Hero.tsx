@@ -42,7 +42,7 @@ export function Hero() {
         </div>
         <div className="hero-image">
           <Image
-            src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1200&q=85"
+            src="/images/hero-pest.svg"
             alt="Professional pest control technician treating a residential property"
             fill
             priority

@@ -55,9 +55,9 @@ export default function LocationsPage() {
           <SectionHeader center title="Reliable pest control, guaranteed results" />
           <div className="grid three-col">
             {[
-              ["Safe & Eco-Friendly", "https://images.unsplash.com/photo-1605200824763-2c0d5b0a83a2?auto=format&fit=crop&w=900&q=82"],
-              ["Quick & Effective", "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=900&q=82"],
-              ["Available Near You", "https://images.unsplash.com/photo-1581579186989-5f6f2c0f5b6a?auto=format&fit=crop&w=900&q=82"]
+              ["Safe & Eco-Friendly", "/images/home-safe.svg"],
+              ["Quick & Effective", "/images/hero-pest.svg"],
+              ["Available Near You", "/images/locations.svg"]
             ].map(([title, image]) => (
               <div className="image-card" key={title}>
                 <Image src={image} alt={`${title} pest control service`} fill sizes="(max-width: 920px) 100vw, 33vw" style={{ objectFit: "cover" }} />
