@@ -54,7 +54,7 @@ export const services = [
   {
     title: "Cockroach Control",
     slug: "cockroach-control",
-    image: "/images/service.jpg",
+    image: "/images/commercial.jpg",
     summary:
       "Kitchen, bathroom and high-traffic cockroach treatments using professional products and proven harbourage control."
   },
@@ -75,7 +75,7 @@ export const services = [
   {
     title: "Bed Bug Treatment",
     slug: "bed-bug-treatment",
-    image: "/images/service.jpg",
+    image: "/images/about.jpg",
     summary:
       "Detailed bed bug inspections and treatments for mattresses, furniture, bedrooms and accommodation spaces."
   },

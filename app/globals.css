@@ -305,10 +305,22 @@ p {
   min-height: 100%;
   flex-direction: column;
   overflow: hidden;
+  background: #fff;
+  color: var(--ink);
 }
 
 .service-card-body {
   padding: 22px;
+}
+
+.service-card h3,
+.service-card p,
+.service-card .link-red {
+  color: var(--ink);
+}
+
+.service-card .link-red {
+  color: var(--brand);
 }
 
 .service-card p {
@@ -476,6 +488,48 @@ p {
   filter: saturate(0.92);
 }
 
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.contact-card,
+.contact-form-card {
+  padding: 30px;
+}
+
+.contact-card {
+  display: grid;
+  gap: 18px;
+}
+
+.contact-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.contact-stack div,
+.contact-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-stack span {
+  font-weight: 700;
+}
+
+.contact-note {
+  margin-top: 8px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  background: var(--brand-soft);
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .faq details {
   border-top: 1px solid var(--line);
   padding: 18px 0;
@@ -541,6 +595,7 @@ p {
 
   .hero-grid,
   .two-col,
+  .contact-layout,
   .footer-grid {
     grid-template-columns: 1fr;
   }
