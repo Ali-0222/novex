@@ -10,7 +10,7 @@ import { services } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Pest Control Services South West Sydney",
   description:
-    "Explore Novex Pest Control services including termite control, cockroach control, spider treatment, rodent control, bed bug treatment, ant control and more."
+    "Explore Novex Pest Control services including cockroach control, spider treatment, rodent control, bed bug treatment, ant control and more."
 };
 
 export default function ServicesPage() {
@@ -96,9 +96,9 @@ export default function ServicesPage() {
           <div className="card feature-panel">
             <h2>Ready to protect what matters most?</h2>
             <p>
-              Whether you are dealing with termites, rodents, spiders,
-              cockroaches, ants or another pest, Novex can inspect, treat and
-              guide the next step with care.
+              Whether you are dealing with rodents, spiders, cockroaches, ants
+              or another pest, Novex can inspect, treat and guide the next step
+              with care.
             </p>
           </div>
           <div style={{ position: "relative", minHeight: 330, borderRadius: 8, overflow: "hidden" }}>

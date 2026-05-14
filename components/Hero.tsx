@@ -14,7 +14,7 @@ export function Hero() {
           <p>
             Novex Pest Control helps protect homes and businesses with precise
             inspections, targeted treatments and practical prevention advice for
-            termites, cockroaches, spiders, ants, rodents, bed bugs and more.
+            cockroaches, spiders, ants, rodents, bed bugs and more.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <Link className="button secondary" href="/contact">

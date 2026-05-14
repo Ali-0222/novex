@@ -3,7 +3,7 @@ export const site = {
   domain: "https://novexpestcontrol.com.au",
   phone: "+61 452 422 330",
   phoneHref: "tel:+61452422330",
-  email: "info@novexpestcontrol.com.au",
+  email: "novexpestcontrol@gmail.com",
   serviceArea: "South West Sydney",
   instagram: "https://www.instagram.com/",
   facebook: "https://www.facebook.com/",
@@ -44,6 +44,7 @@ export const services = [
     summary:
       "Discreet pest management for offices, cafes, warehouses, retail spaces and strata properties across South West Sydney."
   },
+  /*
   {
     title: "Termite Control",
     slug: "termite-control",
@@ -51,6 +52,7 @@ export const services = [
     summary:
       "Termite inspections, targeted treatments and prevention plans to protect timber structures from costly damage."
   },
+  */
   {
     title: "Cockroach Control",
     slug: "cockroach-control",
@@ -79,6 +81,7 @@ export const services = [
     summary:
       "Detailed bed bug inspections and treatments for mattresses, furniture, bedrooms and accommodation spaces."
   },
+  /*
   {
     title: "Bird Prevention",
     slug: "bird-prevention",
@@ -86,6 +89,7 @@ export const services = [
     summary:
       "Humane bird deterrent solutions that protect gutters, ledges, solar panels and exterior surfaces."
   },
+  */
   {
     title: "Ant Control",
     slug: "ant-control",

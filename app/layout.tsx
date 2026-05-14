@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Novex Pest Control"
   },
   description:
-    "Novex Pest Control provides safe, effective pest control across South West Sydney, including termites, cockroaches, ants, spiders, rodents, bed bugs and more.",
+    "Novex Pest Control provides safe, effective pest control across South West Sydney, including cockroaches, ants, spiders, rodents, bed bugs and more.",
   alternates: {
     canonical: "/"
   },

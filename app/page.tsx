@@ -92,7 +92,7 @@ export default function Home() {
             text="We handle common pests across South West Sydney with precise treatments and practical prevention support."
           />
           <div className="grid three-col">
-            {["Ants", "Mosquitoes", "Spiders", "Rodents", "Cockroaches", "Termites", "Bed Bugs", "Fleas & Ticks", "Bird Prevention"].map((pest) => (
+            {["Ants", "Mosquitoes", "Spiders", "Rodents", "Cockroaches", "Bed Bugs", "Fleas & Ticks"].map((pest) => (
               <div className="card feature-panel" key={pest} style={{ background: "transparent", borderColor: "rgba(255,255,255,.35)" }}>
                 <strong>{pest}</strong>
               </div>
