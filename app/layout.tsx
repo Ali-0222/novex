@@ -24,8 +24,9 @@ export const metadata: Metadata = {
     type: "website"
   },
   icons: {
-    icon: "/icon.svg",
-    apple: "/apple-icon.svg"
+    icon: "/images/novex-logo.jpeg",
+    shortcut: "/images/novex-logo.jpeg",
+    apple: "/images/novex-logo.jpeg"
   }
 };
 

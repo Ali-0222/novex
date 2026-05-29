@@ -1,14 +1,15 @@
 :root {
-  --bg: #f5f8fc;
-  --ink: #10233d;
-  --muted: #5c6b7d;
-  --line: #d7e0ec;
-  --brand: #073b78;
-  --brand-dark: #00285c;
-  --brand-soft: #e9f1fb;
-  --gold: #f5c32f;
-  --gold-dark: #d99d00;
-  --forest: #082f5f;
+  --bg: #f6f9ff;
+  --ink: #0d2547;
+  --muted: #596a7d;
+  --line: #d8e3f2;
+  --brand: #063f84;
+  --brand-dark: #012b63;
+  --brand-soft: #e7f1ff;
+  --gold: #ffc928;
+  --gold-dark: #c98d00;
+  --gold-soft: #fff4c7;
+  --forest: #07366f;
   --radius: 8px;
   --shadow: 0 18px 48px rgba(4, 31, 74, 0.16);
 }
@@ -24,8 +25,9 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at top right, rgba(7, 59, 120, 0.08), transparent 24%),
-    radial-gradient(circle at left 18%, rgba(245, 195, 47, 0.12), transparent 18%),
+    linear-gradient(180deg, rgba(255, 201, 40, 0.08), transparent 260px),
+    radial-gradient(circle at top right, rgba(6, 63, 132, 0.1), transparent 25%),
+    radial-gradient(circle at left 18%, rgba(255, 201, 40, 0.16), transparent 18%),
     var(--bg);
   color: var(--ink);
   font-family: "Segoe UI", Tahoma, sans-serif;
@@ -53,8 +55,8 @@ img {
 
 .section-red {
   background:
-    linear-gradient(180deg, rgba(0, 40, 92, 0.98), rgba(7, 59, 120, 0.94)),
-    linear-gradient(135deg, rgba(245, 195, 47, 0.14), transparent 42%);
+    linear-gradient(160deg, rgba(255, 201, 40, 0.22), transparent 28%),
+    linear-gradient(180deg, rgba(1, 43, 99, 0.98), rgba(6, 63, 132, 0.94));
   color: #fff;
 }
 
@@ -107,24 +109,25 @@ p {
   padding: 0 20px;
   border: 1px solid transparent;
   border-radius: var(--radius);
-  background: linear-gradient(135deg, var(--gold), #ffd95b);
+  background: linear-gradient(135deg, var(--gold), #ffe06a);
   color: var(--brand-dark);
   font-weight: 800;
   cursor: pointer;
   transition: transform 0.25s ease, background 0.25s ease, border-color 0.2s ease,
     box-shadow 0.25s ease;
-  box-shadow: 0 10px 24px rgba(217, 157, 0, 0.24);
+  box-shadow: 0 12px 26px rgba(201, 141, 0, 0.28);
 }
 
 .button:hover {
-  background: linear-gradient(135deg, #e9ad08, #ffcf38);
+  background: linear-gradient(135deg, #edaa00, #ffd64a);
   transform: translateY(-2px);
 }
 
 .button.secondary {
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.96);
   color: var(--brand-dark);
-  border-color: var(--line);
+  border-color: rgba(6, 63, 132, 0.18);
+  box-shadow: 0 10px 24px rgba(6, 63, 132, 0.1);
 }
 
 .grid {
@@ -145,7 +148,7 @@ p {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: #fff;
-  box-shadow: 0 12px 24px rgba(20, 32, 29, 0.04);
+  box-shadow: 0 12px 24px rgba(6, 36, 78, 0.06);
 }
 
 .icon-pill {
@@ -174,7 +177,7 @@ p {
   bottom: -1px;
   left: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--brand) 0 68%, var(--gold) 68% 100%);
+  background: linear-gradient(90deg, var(--brand-dark) 0 58%, var(--gold) 58% 78%, var(--brand) 78% 100%);
   content: "";
 }
 
@@ -190,6 +193,7 @@ p {
   display: inline-flex;
   align-items: center;
   flex: 0 0 auto;
+  padding: 8px 0;
 }
 
 .logo-image {
@@ -209,7 +213,7 @@ p {
 
 .nav a.active,
 .nav a:hover {
-  color: var(--brand);
+  color: var(--brand-dark);
 }
 
 .nav a {
@@ -241,6 +245,10 @@ p {
   color: var(--brand);
 }
 
+.socials a:hover {
+  color: var(--gold-dark);
+}
+
 .phone-cta {
   min-width: 178px;
 }
@@ -256,9 +264,9 @@ p {
 .hero {
   padding: 58px 0 70px;
   background:
-    linear-gradient(110deg, transparent 0 64%, rgba(245, 195, 47, 0.88) 64% 69%, transparent 69% 100%),
-    linear-gradient(135deg, rgba(0, 40, 92, 0.98), rgba(7, 59, 120, 0.92) 55%, rgba(245, 248, 252, 0) 100%),
-    linear-gradient(90deg, var(--brand-dark) 0 56%, #eef4fb 56% 100%);
+    linear-gradient(112deg, transparent 0 61%, rgba(255, 201, 40, 0.92) 61% 66%, transparent 66% 100%),
+    linear-gradient(135deg, rgba(1, 43, 99, 0.99), rgba(6, 63, 132, 0.94) 54%, rgba(246, 249, 255, 0) 100%),
+    linear-gradient(90deg, var(--brand-dark) 0 56%, #eef5ff 56% 100%);
   color: #fff;
 }
 
@@ -287,8 +295,8 @@ p {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(12, 27, 25, 0.06), rgba(12, 27, 25, 0.14)),
-    linear-gradient(135deg, transparent 55%, rgba(245, 195, 47, 0.2) 100%);
+    linear-gradient(180deg, rgba(1, 24, 55, 0.04), rgba(1, 24, 55, 0.18)),
+    linear-gradient(135deg, transparent 54%, rgba(255, 201, 40, 0.26) 100%);
   content: "";
   pointer-events: none;
 }
@@ -301,7 +309,7 @@ p {
 }
 
 .hero-badges div {
-  border-top: 1px solid rgba(245, 195, 47, 0.48);
+  border-top: 2px solid rgba(255, 201, 40, 0.62);
   padding-top: 14px;
   font-weight: 800;
 }
@@ -319,7 +327,7 @@ p {
 
 .approach-band {
   background:
-    linear-gradient(180deg, rgba(233, 241, 251, 0.95), rgba(245, 248, 252, 0.98)),
+    linear-gradient(180deg, rgba(231, 241, 255, 0.95), rgba(255, 244, 199, 0.44)),
     #fff;
 }
 
@@ -346,7 +354,7 @@ p {
   padding: 18px 20px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: #fff;
+  background: linear-gradient(135deg, #fff, var(--gold-soft));
 }
 
 .approach-note strong {
@@ -369,6 +377,7 @@ p {
   gap: 14px;
   padding: 26px 22px;
   min-height: 100%;
+  border-top: 4px solid var(--gold);
 }
 
 .approach-card h3 {
@@ -388,6 +397,11 @@ p {
   overflow: hidden;
   background: #fff;
   color: var(--ink);
+}
+
+.service-card:hover {
+  border-color: rgba(255, 201, 40, 0.85);
+  box-shadow: 0 16px 34px rgba(6, 63, 132, 0.12);
 }
 
 .service-card-body {
@@ -428,7 +442,7 @@ p {
   place-items: center;
   border: 1px solid rgba(7, 59, 120, 0.28);
   border-radius: 999px;
-  background: #fff;
+  background: linear-gradient(145deg, #fff, var(--brand-soft));
   color: var(--brand);
   text-align: center;
   box-shadow: var(--shadow);
@@ -454,7 +468,8 @@ p {
 }
 
 .location-card:hover {
-  border-color: rgba(7, 59, 120, 0.35);
+  border-color: rgba(255, 201, 40, 0.9);
+  box-shadow: 0 14px 28px rgba(6, 63, 132, 0.1);
 }
 
 .image-card {
@@ -524,7 +539,7 @@ p {
 .footer {
   border-top: 1px solid var(--line);
   background:
-    linear-gradient(180deg, rgba(245, 248, 252, 0.92), rgba(233, 241, 251, 0.96)),
+    linear-gradient(180deg, rgba(255, 244, 199, 0.34), rgba(231, 241, 255, 0.96)),
     #fff;
 }
 
@@ -606,7 +621,7 @@ p {
   margin-top: 8px;
   padding: 14px 16px;
   border-radius: var(--radius);
-  background: #fff5cf;
+  background: var(--gold-soft);
   color: var(--ink);
   font-weight: 700;
 }
@@ -708,7 +723,7 @@ p {
 
   .mobile-nav a.active,
   .mobile-nav a:hover {
-    background: #fff5cf;
+    background: var(--gold-soft);
     color: var(--brand-dark);
   }
 
@@ -731,8 +746,8 @@ p {
 
   .hero {
     background:
-      linear-gradient(160deg, transparent 0 72%, rgba(245, 195, 47, 0.78) 72% 78%, transparent 78% 100%),
-      linear-gradient(180deg, rgba(0, 40, 92, 0.98), rgba(7, 59, 120, 0.94));
+      linear-gradient(160deg, transparent 0 70%, rgba(255, 201, 40, 0.8) 70% 77%, transparent 77% 100%),
+      linear-gradient(180deg, rgba(1, 43, 99, 0.99), rgba(6, 63, 132, 0.94));
   }
 
   .hero-grid,
@@ -765,6 +780,10 @@ p {
 
   .logo-image {
     width: 88px;
+  }
+
+  .logo {
+    padding: 6px 0;
   }
 
   .phone-cta {

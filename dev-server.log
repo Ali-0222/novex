@@ -22,3 +22,388 @@ Image with src "/images/about.jpg" is using quality "70" which is not configured
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
 Image with src "/images/locations.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 6.4s (next.js: 5.0s, application-code: 1434ms)
+ GET / 200 in 786ms (next.js: 24ms, application-code: 762ms)
+[browser] Image with src "/images/hero.jpg" is using quality "82" which is not configured in images.qualities [75]. Please update your config to [75, 82].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/images/home.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/images/about.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{rsc:{...}, ...}}>
+                    <__next_viewport_boundary__>
+                    <MetadataWrapper>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html lang="en-AU">
+                          <body
+-                           data-new-gr-c-s-check-loaded="14.1297.0"
+-                           data-gr-ext-installed=""
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWll..."
+-                           __processed_a4d1832c-1e73-40fe-b27b-13a06476595e__="true"
+                          >
+                            <Header>
+                              <header className="site-header">
+                                <div
+                                  className="container header-row"
+-                                 bis_skin_checked="1"
+                                >
+                                  <Logo>
+                                  <nav>
+                                  <div
+                                    className="header-actions"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <div
+                                      className="socials"
+                                      aria-label="Social links"
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                <nav id="mobile-nav..." className="mobile-nav" aria-label="Mobile nav...">
+                                  <div
+                                    className="container mobile-nav-inner"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <LinkComponent>
+                                    <LinkComponent>
+                                    <LinkComponent>
+                                    <LinkComponent>
+                                    <LinkComponent>
+                                    <div
+                                      className="mobile-socials"
+                                      aria-label="Social links"
+-                                     bis_skin_checked="1"
+                                    >
+                            ...
+                              <SegmentViewNode type="page" pagePath="page.tsx">
+                                <SegmentTrieNode>
+                                <Home>
+                                  <script>
+                                  <Hero>
+                                    <section className="hero">
+                                      <div
+                                        className="container hero-grid"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+-                                         bis_skin_checked="1"
+                                        >
+                                          <span>
+                                          <h1>
+                                          <p>
+                                          <div
+                                            style={{display:"flex",gap:12,flexWrap:"wrap"}}
+-                                           bis_skin_checked="1"
+                                          >
+                                          <div
+                                            className="hero-badges"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+-                                             bis_skin_checked="1"
+                                            >
+                                        <div
+                                          className="hero-image"
+-                                         bis_skin_checked="1"
+                                        >
+                                  <RevealSection>
+                                    <section ref={{current:null}} className="section re..." style={{...}}>
+                                      <div
+                                        className="container grid two-col"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+                                          style={{position:"relative",minHeight:420,borderRadius:8,overflow:"hidden"}}
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="card feature-panel"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <span>
+                                          <h2>
+                                          <p>
+                                          <div
+                                            className="grid"
+                                            style={{gap:14}}
+-                                           bis_skin_checked="1"
+                                          >
+                                  <RevealSection className="section-red">
+                                    <section ref={{current:null}} className="section re..." style={{...}}>
+                                      <div
+                                        className="container grid two-col"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+                                          className="stat-circle"
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+-                                         bis_skin_checked="1"
+                                        >
+                                  <RevealSection>
+                                    <section ref={{current:null}} className="section re..." style={{...}}>
+                                      <div
+                                        className="container"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <SectionHeader>
+                                          <div
+                                            style={{maxWidth:760,margin:"0 0 42px",textAlign:"left"}}
+-                                           bis_skin_checked="1"
+                                          >
+                                        <div
+                                          className="grid three-col"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <ServiceCard>
+                                            <article className="card servi...">
+                                              <div
+                                                className="service-card-body"
+-                                               bis_skin_checked="1"
+                                              >
+                                              <div
+                                                className="service-card-image"
+-                                               bis_skin_checked="1"
+                                              >
+                                          <ServiceCard>
+                                            <article className="card servi...">
+                                              <div
+                                                className="service-card-body"
+-                                               bis_skin_checked="1"
+                                              >
+                                              <div
+                                                className="service-card-image"
+-                                               bis_skin_checked="1"
+                                              >
+                                          <ServiceCard>
+                                            <article className="card servi...">
+                                              <div
+                                                className="service-card-body"
+-                                               bis_skin_checked="1"
+                                              >
+                                              <div
+                                                className="service-card-image"
+-                                               bis_skin_checked="1"
+                                              >
+                                          <ServiceCard>
+                                            <article className="card servi...">
+                                              <div
+                                                className="service-card-body"
+-                                               bis_skin_checked="1"
+                                              >
+                                              <div
+                                                className="service-card-image"
+-                                               bis_skin_checked="1"
+                                              >
+                                          <ServiceCard>
+                                            <article className="card servi...">
+                                              <div
+                                                className="service-card-body"
+-                                               bis_skin_checked="1"
+                                              >
+                                              <div
+                                                className="service-card-image"
+-                                               bis_skin_checked="1"
+                                              >
+                                          <ServiceCard>
+                                            <article className="card servi...">
+                                              <div
+                                                className="service-card-body"
+-                                               bis_skin_checked="1"
+                                              >
+                                              <div
+                                                className="service-card-image"
+-                                               bis_skin_checked="1"
+                                              >
+                                        <div
+                                          style={{marginTop:28}}
+-                                         bis_skin_checked="1"
+                                        >
+                                  <RevealSection className="section-red">
+                                    <section ref={{current:null}} className="section re..." style={{...}}>
+                                      <div
+                                        className="container"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <SectionHeader>
+                                          <div
+                                            style={{maxWidth:760,margin:"0 auto 42px",textAlign:"center"}}
+-                                           bis_skin_checked="1"
+                                          >
+                                        <div
+                                          className="grid three-col"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="card feature-panel"
+                                            style={{background:"transparent",borderColor:"rgba(255,2..."}}
+-                                           bis_skin_checked="1"
+                                          >
+                                          <div
+                                            className="card feature-panel"
+                                            style={{background:"transparent",borderColor:"rgba(255,2..."}}
+-                                           bis_skin_checked="1"
+                                          >
+                                          <div
+                                            className="card feature-panel"
+                                            style={{background:"transparent",borderColor:"rgba(255,2..."}}
+-                                           bis_skin_checked="1"
+                                          >
+                                          <div
+                                            className="card feature-panel"
+                                            style={{background:"transparent",borderColor:"rgba(255,2..."}}
+-                                           bis_skin_checked="1"
+                                          >
+                                          <div
+                                            className="card feature-panel"
+                                            style={{background:"transparent",borderColor:"rgba(255,2..."}}
+-                                           bis_skin_checked="1"
+                                          >
+                                          <div
+                                            className="card feature-panel"
+                                            style={{background:"transparent",borderColor:"rgba(255,2..."}}
+-                                           bis_skin_checked="1"
+                                          >
+                                          <div
+                                            className="card feature-panel"
+                                            style={{background:"transparent",borderColor:"rgba(255,2..."}}
+-                                           bis_skin_checked="1"
+                                          >
+                                        ...
+                                  <Process>
+                                    <RevealSection>
+                                      <section ref={{current:null}} className="section re..." style={{...}}>
+                                        <div
+                                          className="container"
+-                                         bis_skin_checked="1"
+                                        >
+                                          <SectionHeader>
+                                            <div
+                                              style={{maxWidth:760,margin:"0 auto 42px",textAlign:"center"}}
+-                                             bis_skin_checked="1"
+                                            >
+                                          <div
+                                            className="grid three-col"
+-                                           bis_skin_checked="1"
+                                          >
+                                            <div
+                                              className="card feature-panel"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="card feature-panel"
+-                                             bis_skin_checked="1"
+                                            >
+                                            <div
+                                              className="card feature-panel"
+-                                             bis_skin_checked="1"
+                                            >
+                                  <RevealSection>
+                                    <section ref={{current:null}} className="section re..." style={{...}}>
+                                      <div
+                                        className="container grid two-col"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <div
+-                                         bis_skin_checked="1"
+                                        >
+                                        <div
+                                          className="grid"
+                                          style={{gridTemplateColumns:"repeat(2, ..."}}
+-                                         bis_skin_checked="1"
+                                        >
+                                          <div
+                                            className="card feature-panel"
+-                                           bis_skin_checked="1"
+                                          >
+                                          <div
+                                            className="card feature-panel"
+-                                           bis_skin_checked="1"
+                                          >
+                                          <div
+                                            className="card feature-panel"
+-                                           bis_skin_checked="1"
+                                          >
+                                          <div
+                                            className="card feature-panel"
+-                                           bis_skin_checked="1"
+                                          >
+                                  <CTA>
+                                    <RevealSection className="section-red">
+                                      <section ref={{current:null}} className="section re..." style={{...}}>
+                                        <div
+                                          className="container"
+                                          style={{textAlign:"center"}}
+-                                         bis_skin_checked="1"
+                                        >
+                                          <span>
+                                          <h2>
+                                          <p>
+                                          <div
+                                            style={{display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap"}}
+-                                           bis_skin_checked="1"
+                                          >
+                            <Footer>
+                              <footer className="footer">
+                                <div
+                                  className="container footer-grid"
+-                                 bis_skin_checked="1"
+                                >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                                  <div
+-                                   bis_skin_checked="1"
+                                  >
+                                    <nav>
+                                    <div
+                                      style={{display:"flex",gap:16,marginTop:34,color:"var(--brand)"}}
+-                                     bis_skin_checked="1"
+                                    >
+                                    ...
+                                ...
+                  ...
+ 
+[browser] Image with src "/images/novex-logo.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[browser] Image with src "/images/home.jpg" is using quality "72" which is not configured in images.qualities [75]. Please update your config to [72, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/images/commercial.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] Image with src "/images/locations.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
