@@ -1,0 +1,24 @@
+
+> novex-pest-control@1.0.0 dev
+> cross-env NEXT_TEST_WASM_DIR=./node_modules/@next/swc-wasm-nodejs next dev --webpack
+
+▲ Next.js 16.2.6 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.100.186:3000
+✓ Ready in 1589ms
+  next-swc build: wasm build ./node_modules/@next/swc-wasm-nodejs
+  Skipping creating a lockfile at C:\projects\novex\.next\dev\lock because we're using WASM bindings
+
+○ Compiling / ...
+Image with src "/images/hero.jpg" is using quality "82" which is not configured in images.qualities [75]. Please update your config to [75, 82].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/images/home.jpg" is using quality "72" which is not configured in images.qualities [75]. Please update your config to [72, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/images/home.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/images/commercial.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/images/about.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+Image with src "/images/locations.jpg" is using quality "70" which is not configured in images.qualities [75]. Please update your config to [70, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
