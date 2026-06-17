@@ -9,7 +9,7 @@ import { RevealSection } from "@/components/RevealSection";
 export const metadata: Metadata = {
   title: "About Novex Pest Control",
   description:
-    "Learn about Novex Pest Control, a South West Sydney pest control company focused on safe treatments, honest service and long-term pest prevention."
+    "Learn about Novex Pest Control, a Blacktown and North West Sydney pest control company focused on safe treatments, honest service and long-term pest prevention."
 };
 
 export default function AboutPage() {
@@ -58,7 +58,7 @@ export default function AboutPage() {
             center
             light
             title="Mission and vision statement"
-            text="We aim to become a trusted pest control partner for South West Sydney by combining high-quality treatments with practical prevention advice."
+            text="We aim to become a trusted pest control partner for Blacktown and North West Sydney by combining high-quality treatments with practical prevention advice."
           />
           <div className="grid three-col">
             {[

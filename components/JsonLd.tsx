@@ -1,4 +1,4 @@
-import { site } from "@/lib/site";
+import { site, suburbs } from "@/lib/site";
 
 export function JsonLd() {
   const data = {
@@ -8,7 +8,10 @@ export function JsonLd() {
     url: site.domain,
     telephone: site.phone,
     email: site.email,
-    areaServed: site.serviceArea,
+    areaServed: suburbs.map((suburb) => ({
+      "@type": "Place",
+      name: `${suburb}, NSW, Australia`
+    })),
     priceRange: "$$",
     image: `${site.domain}/opengraph-image`
   };

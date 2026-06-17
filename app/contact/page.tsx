@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact Novex Pest Control",
   description:
-    "Contact Novex Pest Control for pest control quotes, inspections and bookings across South West Sydney."
+    "Contact Novex Pest Control for pest control quotes, inspections and bookings across Blacktown, Seven Hills, Quakers Hill and North West Sydney."
 };
 
 export default function ContactPage() {
@@ -27,7 +27,7 @@ export default function ContactPage() {
               <span className="eyebrow">Quick contact</span>
               <h2>Fast quotes, clear next steps, no fluff.</h2>
               <p>
-                We support homes, rentals and business properties across South West Sydney with practical pest control advice and prompt follow-up.
+                We support homes, rentals and business properties across Blacktown and North West Sydney with practical pest control advice and prompt follow-up.
               </p>
               <div className="contact-stack">
                 <div>

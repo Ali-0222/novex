@@ -6,12 +6,21 @@ import { CTA } from "@/components/CTA";
 import { Process } from "@/components/Process";
 import { SectionHeader } from "@/components/SectionHeader";
 import { RevealSection } from "@/components/RevealSection";
-import { suburbs } from "@/lib/site";
+import { additionalSuburbs, prioritySuburbs } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Pest Control Locations South West Sydney",
+  title: "Pest Control Locations Blacktown & North West Sydney",
   description:
-    "Novex Pest Control services Minto, Leppington, Gregory Hills, Liverpool, Oran Park, Campbelltown, Camden, Austral, Raby and nearby suburbs."
+    "Novex Pest Control services Blacktown, Seven Hills, Quakers Hill, Stanhope Gardens, The Ponds, Schofields, Riverstone, Glenwood, Kings Langley, Kings Park and nearby suburbs.",
+  keywords: [
+    "Pest Control Blacktown",
+    "Best Pest Control in Blacktown",
+    "Pest Control Seven Hills",
+    "Pest Control Quakers Hill",
+    "Pest Control The Ponds",
+    "Pest Control Schofields",
+    "Novex Pest Control locations"
+  ]
 };
 
 export default function LocationsPage() {
@@ -22,8 +31,8 @@ export default function LocationsPage() {
           <SectionHeader
             center
             eyebrow="Locations"
-            title="Pest control near you in South West Sydney"
-            text="Fast, reliable pest control services for homes and businesses across local suburbs."
+            title="Pest control in Blacktown and North West Sydney"
+            text="Novex Pest Control currently works in the listed suburbs only, with fast support for homes and businesses in these local areas."
           />
         </div>
       </RevealSection>
@@ -32,21 +41,39 @@ export default function LocationsPage() {
         <div className="container">
           <SectionHeader
             center
-            title="No more unwanted pests"
-            text="We provide professional pest control services across the following suburbs and nearby areas."
+            title="High-priority pest control areas"
+            text="Our main service locations are Blacktown, Seven Hills, Quakers Hill, Stanhope Gardens, The Ponds, Schofields, Riverstone, Glenwood, Kings Langley and Kings Park."
           />
           <div className="grid locations-grid">
-            {suburbs.map((suburb) => (
+            {prioritySuburbs.map((suburb) => (
+              <div className="card location-card" key={suburb}>
+                <MapPin color="var(--brand)" size={22} /> {suburb}
+              </div>
+            ))}
+          </div>
+        </div>
+      </RevealSection>
+      <RevealSection>
+        <div className="container">
+          <SectionHeader
+            center
+            title="Additional good areas"
+            text="We also provide pest control in these nearby suburbs when scheduling is available."
+          />
+          <div className="grid locations-grid">
+            {additionalSuburbs.map((suburb) => (
               <div className="card location-card" key={suburb}>
                 <MapPin color="var(--brand)" size={22} /> {suburb}
               </div>
             ))}
           </div>
           <p style={{ textAlign: "center", marginTop: 34 }}>
-            If your suburb is not listed, we may still service your area.{" "}
+            We focus on these listed locations only. If your suburb is close to
+            one of these areas,{" "}
             <Link className="link-red" href="/contact">
-              Talk to an expert
+              talk to an expert
             </Link>
+            .
           </p>
         </div>
       </RevealSection>

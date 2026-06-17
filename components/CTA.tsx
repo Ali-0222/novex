@@ -12,9 +12,9 @@ export function CTA() {
         </span>
         <h2>Need pest control near you?</h2>
         <p style={{ maxWidth: 660, margin: "0 auto 26px" }}>
-          Get a fast quote for residential or commercial pest control in South
-          West Sydney. Tell us what you are seeing and we will guide the next
-          best step.
+          Get a fast quote for residential or commercial pest control in
+          Blacktown, Seven Hills, Quakers Hill, Schofields and nearby North
+          West Sydney suburbs.
         </p>
         <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
           <Link className="button secondary" href={site.phoneHref}>

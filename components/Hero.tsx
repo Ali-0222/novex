@@ -8,13 +8,15 @@ export function Hero() {
       <div className="container hero-grid">
         <div>
           <span className="eyebrow" style={{ color: "#ffd9d4" }}>
-            Pest control South West Sydney
+            Pest control Blacktown & North West Sydney
           </span>
-          <h1>Say goodbye to pests, hello to comfort.</h1>
+          <h1>Fast pest control in Blacktown and nearby suburbs.</h1>
           <p>
             Novex Pest Control helps protect homes and businesses with precise
             inspections, targeted treatments and practical prevention advice for
-            cockroaches, spiders, ants, rodents, bed bugs and more.
+            cockroaches, spiders, ants, rodents, bed bugs and more across
+            Blacktown, Seven Hills, Quakers Hill, The Ponds and surrounding
+            North West Sydney areas.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <Link className="button secondary" href="/contact">
@@ -36,7 +38,7 @@ export function Hero() {
             </div>
             <div>
               Local coverage
-              <span>South West Sydney suburbs</span>
+              <span>Blacktown area suburbs</span>
             </div>
           </div>
         </div>

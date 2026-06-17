@@ -60,7 +60,7 @@ export default function Home() {
             <h2>With years of experience, our team delivers reliable protection.</h2>
             <p>
               We help remove unwanted pests and improve long-term prevention for
-              homes and workplaces across South West Sydney.
+              homes and workplaces across Blacktown and North West Sydney.
             </p>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function Home() {
         <div className="container">
           <SectionHeader
             title="Comprehensive pest control solutions"
-            text="Book targeted pest control services for the most common residential and commercial pest problems in NSW."
+            text="Book targeted pest control services for the most common residential and commercial pest problems in Blacktown, North West Sydney and NSW."
           />
           <div className="grid three-col">
             {services.slice(0, 6).map((service) => (
@@ -89,7 +89,7 @@ export default function Home() {
             center
             light
             title="No more unwanted pests"
-            text="We handle common pests across South West Sydney with precise treatments and practical prevention support."
+            text="We handle common pests across Blacktown, Seven Hills, Quakers Hill, The Ponds, Schofields and nearby suburbs with precise treatments and practical prevention support."
           />
           <div className="grid three-col">
             {["Ants", "Mosquitoes", "Spiders", "Rodents", "Cockroaches", "Bed Bugs", "Fleas & Ticks"].map((pest) => (

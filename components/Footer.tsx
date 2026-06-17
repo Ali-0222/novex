@@ -17,8 +17,9 @@ export function Footer() {
         <div>
           <Logo />
           <p style={{ maxWidth: 390, marginTop: 18 }}>
-            Local pest control in South West Sydney for homes, businesses,
-            rentals and strata properties that need fast, careful protection.
+            Local pest control in Blacktown and North West Sydney for homes,
+            businesses, rentals and strata properties that need fast, careful
+            protection.
           </p>
           <p>
             <Phone size={16} /> {site.phone}

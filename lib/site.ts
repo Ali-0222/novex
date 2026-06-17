@@ -4,7 +4,7 @@ export const site = {
   phone: "+61 452 422 330",
   phoneHref: "tel:+61452422330",
   email: "novexpestcontrol@gmail.com",
-  serviceArea: "South West Sydney",
+  serviceArea: "Blacktown and North West Sydney",
   instagram: "https://www.instagram.com/",
   facebook: "https://www.facebook.com/",
   tiktok: "https://www.tiktok.com/",
@@ -12,21 +12,50 @@ export const site = {
 };
 
 export const suburbs = [
-  "Minto",
-  "Leppington",
-  "Gregory Hills",
-  "Liverpool",
-  "Oran Park",
-  "Catherine Park",
-  "Camden",
-  "Campbelltown",
-  "Austral",
-  "Edmondson Park",
-  "Gledswood Hills",
-  "Denham Court",
-  "Harrington Park",
-  "Macarthur",
-  "Raby"
+  "Blacktown",
+  "Seven Hills",
+  "Quakers Hill",
+  "Stanhope Gardens",
+  "The Ponds",
+  "Schofields",
+  "Riverstone",
+  "Glenwood",
+  "Kings Langley",
+  "Kings Park",
+  "Rooty Hill",
+  "Doonside",
+  "Mount Druitt",
+  "Marsden Park",
+  "Colebee",
+  "Acacia Gardens",
+  "Parklea",
+  "Kellyville",
+  "Bella Vista"
+];
+
+export const prioritySuburbs = [
+  "Blacktown",
+  "Seven Hills",
+  "Quakers Hill",
+  "Stanhope Gardens",
+  "The Ponds",
+  "Schofields",
+  "Riverstone",
+  "Glenwood",
+  "Kings Langley",
+  "Kings Park"
+];
+
+export const additionalSuburbs = [
+  "Rooty Hill",
+  "Doonside",
+  "Mount Druitt",
+  "Marsden Park",
+  "Colebee",
+  "Acacia Gardens",
+  "Parklea",
+  "Kellyville",
+  "Bella Vista"
 ];
 
 export const services = [
@@ -42,7 +71,7 @@ export const services = [
     slug: "commercial-pest-control",
     image: "/images/commercial.jpg",
     summary:
-      "Discreet pest management for offices, cafes, warehouses, retail spaces and strata properties across South West Sydney."
+      "Discreet pest management for offices, cafes, warehouses, retail spaces and strata properties across Blacktown and North West Sydney."
   },
   /*
   {

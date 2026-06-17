@@ -12,26 +12,31 @@ export function ContactForm() {
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
     setStatus("sending");
     setMessage("");
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
     const payload = Object.fromEntries(formData.entries());
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
-    });
 
-    if (response.ok) {
-      event.currentTarget.reset();
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      if (!response.ok) {
+        throw new Error("Contact request failed");
+      }
+
+      form.reset();
       setStatus("success");
-      setMessage("Thanks. Your enquiry has been sent to Novex Pest Control.");
-      return;
+      setMessage("Email sent successfully. We will contact you soon.");
+    } catch {
+      setStatus("error");
+      setMessage("Sorry, we could not send your enquiry. Please call us directly.");
     }
-
-    setStatus("error");
-    setMessage("Sorry, we could not send your enquiry. Please call us directly.");
   }
 
   return (
@@ -72,7 +77,11 @@ export function ContactForm() {
       <button className="button" type="submit" disabled={status === "sending"}>
         <Send size={18} /> {status === "sending" ? "Sending..." : "Send"}
       </button>
-      {message ? <p role="status">{message}</p> : null}
+      {message ? (
+        <div className={`toast ${status === "error" ? "toast-error" : "toast-success"}`} role="status">
+          {message}
+        </div>
+      ) : null}
     </form>
   );
 }

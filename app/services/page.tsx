@@ -8,9 +8,16 @@ import { RevealSection } from "@/components/RevealSection";
 import { services } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Pest Control Services South West Sydney",
+  title: "Pest Control Services Blacktown & North West Sydney",
   description:
-    "Explore Novex Pest Control services including cockroach control, spider treatment, rodent control, bed bug treatment, ant control and more."
+    "Explore fast Novex Pest Control services across Blacktown and North West Sydney, including cockroach control, spider treatment, rodent control, bed bug treatment, ant control and more.",
+  keywords: [
+    "Pest Control",
+    "Pest Control in Australia",
+    "fast pest control",
+    "Novex Pest Control services",
+    "Blacktown pest control services"
+  ]
 };
 
 export default function ServicesPage() {
@@ -22,7 +29,7 @@ export default function ServicesPage() {
             center
             eyebrow="Pest control services"
             title="Professional pest control for homes and businesses"
-            text="Keep your property pest-free with targeted treatments, honest advice and prevention plans across South West Sydney."
+            text="Keep your property pest-free with targeted treatments, honest advice and prevention plans across Blacktown and North West Sydney."
           />
         </div>
       </RevealSection>
