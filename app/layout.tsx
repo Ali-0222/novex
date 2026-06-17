@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { seoKeywords } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -11,21 +12,7 @@ export const metadata: Metadata = {
   },
   description:
     "Novex Pest Control provides fast, safe and effective pest control across Blacktown, Seven Hills, Quakers Hill, The Ponds, Schofields and nearby North West Sydney suburbs.",
-  keywords: [
-    "Pest",
-    "Pest Control",
-    "Pest Control in Australia",
-    "Best Pest Control in Blacktown",
-    "fast pest control",
-    "Novex",
-    "Novex Pest Control",
-    "Blacktown pest control",
-    "Seven Hills pest control",
-    "Quakers Hill pest control",
-    "The Ponds pest control",
-    "Schofields pest control",
-    "Riverstone pest control"
-  ],
+  keywords: seoKeywords,
   alternates: {
     canonical: "/"
   },

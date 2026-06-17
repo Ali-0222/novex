@@ -58,6 +58,40 @@ export const additionalSuburbs = [
   "Bella Vista"
 ];
 
+export const seoKeywords = [
+  "novex pest control",
+  "pest control blacktown",
+  "pest control sydney",
+  "pest control huntingwood",
+  "pest control seven hills",
+  "pest control",
+  "pest control oakhurst",
+  "pest control lalor park",
+  "pest control toongabbie",
+  "pest control wetherill park",
+  "pest control kings langley",
+  "novex",
+  "pest control rooty hill",
+  "cockroach traps",
+  "pest control mount druitt",
+  "pest control in blacktown",
+  "pest control castle hill",
+  "pest control doonside",
+  "24 hour pest control",
+  "blacktown pest control",
+  "cockroach control blacktown",
+  "no 1 pest control",
+  "pest control arndell park",
+  "pest control glendenning",
+  "rat control blacktown",
+  "spider extermination",
+  "termite inspection blacktown",
+  "rodent control blacktown",
+  "pest control constitution hill",
+  "now pest control",
+  "pedt control"
+];
+
 export const services = [
   {
     title: "Home Pest Control",

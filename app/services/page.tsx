@@ -5,19 +5,13 @@ import { CTA } from "@/components/CTA";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ServiceCard } from "@/components/ServiceCard";
 import { RevealSection } from "@/components/RevealSection";
-import { services } from "@/lib/site";
+import { seoKeywords, services } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Pest Control Services Blacktown & North West Sydney",
   description:
     "Explore fast Novex Pest Control services across Blacktown and North West Sydney, including cockroach control, spider treatment, rodent control, bed bug treatment, ant control and more.",
-  keywords: [
-    "Pest Control",
-    "Pest Control in Australia",
-    "fast pest control",
-    "Novex Pest Control services",
-    "Blacktown pest control services"
-  ]
+  keywords: seoKeywords
 };
 
 export default function ServicesPage() {

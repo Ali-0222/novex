@@ -6,21 +6,13 @@ import { CTA } from "@/components/CTA";
 import { Process } from "@/components/Process";
 import { SectionHeader } from "@/components/SectionHeader";
 import { RevealSection } from "@/components/RevealSection";
-import { additionalSuburbs, prioritySuburbs } from "@/lib/site";
+import { additionalSuburbs, prioritySuburbs, seoKeywords } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Pest Control Locations Blacktown & North West Sydney",
   description:
     "Novex Pest Control services Blacktown, Seven Hills, Quakers Hill, Stanhope Gardens, The Ponds, Schofields, Riverstone, Glenwood, Kings Langley, Kings Park and nearby suburbs.",
-  keywords: [
-    "Pest Control Blacktown",
-    "Best Pest Control in Blacktown",
-    "Pest Control Seven Hills",
-    "Pest Control Quakers Hill",
-    "Pest Control The Ponds",
-    "Pest Control Schofields",
-    "Novex Pest Control locations"
-  ]
+  keywords: seoKeywords
 };
 
 export default function LocationsPage() {

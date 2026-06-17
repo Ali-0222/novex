@@ -1,4 +1,4 @@
-import { site, suburbs } from "@/lib/site";
+import { seoKeywords, services, site, suburbs } from "@/lib/site";
 
 export function JsonLd() {
   const data = {
@@ -11,6 +11,15 @@ export function JsonLd() {
     areaServed: suburbs.map((suburb) => ({
       "@type": "Place",
       name: `${suburb}, NSW, Australia`
+    })),
+    knowsAbout: seoKeywords,
+    makesOffer: services.map((service) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: service.title,
+        description: service.summary
+      }
     })),
     priceRange: "$$",
     image: `${site.domain}/opengraph-image`
